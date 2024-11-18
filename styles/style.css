@@ -3,6 +3,10 @@ html {
     font-family: 'Actor';
   }
   
+  .content {
+    max-width: 500px;
+    margin: auto;
+  }
   
   h1 {
     font-size: 60px;
@@ -23,9 +27,11 @@ html {
   body {
     width: 600px;
     margin: 0 auto;
-    background-color: #FF9500;
+    background-image: src="images/forest-background.png";
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     padding: 0 20px 20px 20px;
-    border: 5px solid black;
   }
   
   h1 {
