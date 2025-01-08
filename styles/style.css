@@ -36,6 +36,41 @@ html {
     padding: 0 20px 20px 20px;
   }
   
+  nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 150px;
+  }
+
+  nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+    margin-right: 25em;
+    list-style: none;
+  }
+
+  nav ul a{
+    float: left;
+    color: rgb(93,142,103);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.3s ease; 
+  }
+
+  nav > a{
+    font-size: 32px;
+    background-color: rgb(15,54,50);
+    color: rgb(253,189,57);
+  }
+
   h1 {
     margin: 0;
     padding: 20px 0;
