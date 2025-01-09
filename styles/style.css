@@ -41,42 +41,24 @@ html {
     background-size: cover;
     padding: 0 20px 20px 20px;
   }
-  
-  nav{
-    position: absolute;
+
+  .nav-link {
     top: 0;
     right: 0;
-    width: 60%;
-    text-align: right;
+    font-size: 23px;
+    padding-top: 10px;
+    text-decoration: none;
     display: flex;
-    justify-content: space-between;
-    padding: 30px 150px;
-    border-bottom: 1px solid rgb(71, 71, 74);
-  }
-
-  nav ul{
-    display: flex;
-    justify-content: center;
-    gap: 5em;
-    margin-right: 25em;
-    list-style: none;
-    align-items: end;
-  }
-
-  nav ul a{
+    justify-content: end;
+    display: inline;
     font-family: 'Duru Sans';
     color: rgb(71, 71, 74);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    transition: 0.3s ease; 
+     
   }
 
-  nav > a{
-    font-size: 32px;
-    background-color: rgb(15,54,50);
-    color: rgb(253,189,57);
+  #nav-bar {
+  float: right;
+   
   }
   
   img {
