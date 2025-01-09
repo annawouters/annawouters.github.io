@@ -51,6 +51,7 @@ html {
     display: inline;
     font-family: 'Duru Sans';
     color: rgb(71, 71, 74);
+    padding: 5px 5px;
      
   }
 
@@ -59,6 +60,14 @@ html {
   top: 0;
   right: 0;
   }
+
+  #nav-bar:hover {
+    float: right;
+    top: 0;
+    right: 0;
+    font-family: 'Duru Sans';
+    color: rgb(134, 92, 47);
+    }
   
   img {
     display: block;
