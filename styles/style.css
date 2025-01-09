@@ -43,13 +43,13 @@ html {
   }
   
   nav{
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
-    width: 100%;
+    width: 60%;
+    text-align: right;
     display: flex;
     justify-content: space-between;
-    align-items: right;
     padding: 30px 150px;
     border-bottom: 1px solid rgb(71, 71, 74);
   }
