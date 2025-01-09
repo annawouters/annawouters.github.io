@@ -12,6 +12,10 @@ html {
   h1 {
     font-size: 60px;
     text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    color: #cf7053;
+    text-shadow: 3px 3px 1px black;
   }
   
   p, li {
@@ -44,7 +48,7 @@ html {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: right;
     padding: 30px 150px;
     border-bottom: 1px solid rgb(71, 71, 74);
   }
@@ -59,7 +63,6 @@ html {
   }
 
   nav ul a{
-    float: left;
     font-family: 'Duru Sans';
     color: rgb(71, 71, 74);
     text-align: center;
@@ -73,13 +76,6 @@ html {
     font-size: 32px;
     background-color: rgb(15,54,50);
     color: rgb(253,189,57);
-  }
-
-  h1 {
-    margin: 0;
-    padding: 20px 0;
-    color: #cf7053;
-    text-shadow: 3px 3px 1px black;
   }
   
   img {
