@@ -1,6 +1,7 @@
 html {
     font-size: 10px;
     font-family: 'Actor';
+    background-color: #7fa5f8;
   }
   
   .content {
@@ -53,12 +54,15 @@ html {
     gap: 5em;
     margin-right: 25em;
     list-style: none;
+    align-items: end;
   }
 
   nav ul a{
     float: left;
-    color: rgb(93,142,103);
+    font-family: 'Duru Sans';
+    color: rgb(71, 71, 74);
     text-align: center;
+    font-weight: bolder;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
