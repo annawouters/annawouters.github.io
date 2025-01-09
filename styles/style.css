@@ -46,6 +46,7 @@ html {
     justify-content: space-between;
     align-items: center;
     padding: 30px 150px;
+    border-bottom: 1px solid rgb(71, 71, 74);
   }
 
   nav ul{
@@ -62,7 +63,6 @@ html {
     font-family: 'Duru Sans';
     color: rgb(71, 71, 74);
     text-align: center;
-    font-weight: bolder;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
