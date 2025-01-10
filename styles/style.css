@@ -89,13 +89,8 @@ html {
   .dropdown-content {
     display: none; /* Hide dropdown by default */
     position: absolute;
-    left: 0;
-    top: 100%; /* Position the dropdown below the Products link */
-    background-color: antiquewhite; /* No background or border */
-    padding: 0; /* Remove padding */
-    margin: 0;
+    background-color: transparent; /* No background or border */
     list-style-type: none; /* Removes bullet points */
-    width: max-content; /* Adjust to the size of the items */
     z-index: 9999; /* Make sure dropdown is above other content */
   }
   
