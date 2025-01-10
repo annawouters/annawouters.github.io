@@ -99,6 +99,7 @@ html {
   }
   
   .dropdown-content li {
+    display: block; /* Ensures dropdown items are stacked vertically */
     padding: 5px 10px;
   }
   
@@ -118,7 +119,7 @@ html {
     font-style: italic;
     color: rgb(71, 71, 74);
     transform: skewX(-10deg);
-  }
+  }  
   
   img {
     display: block;
