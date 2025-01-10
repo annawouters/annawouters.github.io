@@ -89,13 +89,8 @@ html {
   .dropdown-content {
     display: none; /* Hide dropdown by default */
     position: absolute;
-    left: 0;
-    top: 100%; /* Position the dropdown below the Products link */
     background-color: transparent; /* No background or border */
-    padding: 0; /* Remove padding */
-    margin: 0;
     list-style-type: none; /* Removes bullet points */
-    width: max-content; /* Adjust to the size of the items */
     z-index: 9999; /* Make sure dropdown is above other content */
   }
   
@@ -121,22 +116,7 @@ html {
     color: rgb(71, 71, 74);
     transform: skewX(-10deg);
   }  
-
-  .dropdown .dropbtn {
-    font-size: 16px;  
-    border: none;
-    outline: none;
-    color: rgb(71, 71, 74);
-    padding: 14px 16px;
-    background-color: transparent;
-    font-family: inherit;
-    margin: 0;
-  }
-  
-  .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: transparent;
-  }
-  
+    
   img {
     display: block;
     margin: 0 auto;
