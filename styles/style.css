@@ -1,6 +1,6 @@
 html {
     font-size: 10px;
-    font-family: 'Actor';
+    font-family: 'Times New Roman', Times, serif;
     background-color: #7fa5f8;
   }
   
@@ -23,6 +23,7 @@ html {
     font-size: 16px;
     line-height: 2;
     letter-spacing: 1px;
+    color: rgb(71, 71, 74)
   }
   
   
@@ -45,26 +46,94 @@ html {
   .nav-link {
     font-size: 23px;
     padding-top: 10px;
-    padding: 5px 5px; /* Zorg ervoor dat padding consistent is */
     text-decoration: none;
+    display: flex;
+    justify-content: end;
+    display: inline;
     font-family: 'Duru Sans';
     color: rgb(71, 71, 74);
-    display: inline-block; /* Verander van 'inline' naar 'inline-block' om betere controle over de layout */
-    transition: transform 0.3s ease, color 0.3s ease; /* Voeg overgang toe voor een vloeiendere hover */
+    padding: 5px 5px;
+     
+  }
+/* Basic navigation styling */
+.nav-bar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-bar li {
+  position: relative; /* Ensure that the dropdown can be positioned relative to this item */
+}
+
+.nav-link {
+  font-size: 23px;
+  padding: 10px;
+  text-decoration: none;
+  font-family: 'Duru Sans';
+  color: rgb(71, 71, 74);
+  display: inline-block;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+  font-style: italic;
+  color: rgb(134, 92, 47);
+  transform: skewX(-10deg);
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none; /* Hide the dropdown menu by default */
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  list-style-type: none;
+  padding: 10px 0;
+}
+
+.dropdown-content li {
+  padding: 8px 16px;
+}
+
+.dropdown-content li a {
+  color: rgb(71, 71, 74);
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content li a:hover {
+  background-color: rgb(134, 92, 47);
+  color: white;
+}
+
+/* Show the dropdown when hovering over the parent */
+.dropdown:hover .dropdown-content {
+  display: grid;
+}
+
+  /*#nav-bar {
+  float: right;
+  top: 0;
+  right: 0;
   }
 
-  .nav-link:hover {
-    font-style: italic; /* Schuin gedrukt bij hover */
-    color: rgb(134, 92, 47); /* Kleur veranderen bij hover */
-    transform: skewX(-10deg); /* Voegt een schuine hoek toe aan de tekst */
-  }
-
-  #nav-bar {
+  #nav-bar:hover {
     float: right;
     top: 0;
     right: 0;
-  }
-
+    font-family: 'Duru Sans';
+    color: rgb(71, 71, 74);
+    }*/
+  
   img {
     display: block;
     margin: 0 auto;
