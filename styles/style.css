@@ -43,81 +43,77 @@ html {
     padding: 0 20px 20px 20px;
   }
 
-  .nav-link {
-    font-size: 23px;
-    padding-top: 10px;
-    text-decoration: none;
-    display: flex;
-    justify-content: end;
-    display: inline;
-    font-family: 'Duru Sans';
-    color: rgb(71, 71, 74);
-    padding: 5px 5px;
-     
-  }
-/* Basic navigation styling */
-.nav-bar ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: flex-end;
+/* Basic styling for the navigation bar */
+#nav-bar {
+  background-color: #7fa5f8; /* Set a background color if needed */
+  font-family: 'Duru Sans';
 }
 
-.nav-bar li {
-  position: relative; /* Ensure that the dropdown can be positioned relative to this item */
+.nav-list {
+  list-style-type: none; /* Remove default list styles */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Display the menu items in a row */
+  justify-content: flex-end; /* Align items to the right */
+}
+
+.nav-list li {
+  position: relative; /* Allow positioning of the dropdown menu */
 }
 
 .nav-link {
   font-size: 23px;
   padding: 10px;
   text-decoration: none;
-  font-family: 'Duru Sans';
   color: rgb(71, 71, 74);
-  display: inline-block;
+  display: inline-block; /* Keeps the links inline */
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
+/* Hover effect for nav links */
 .nav-link:hover {
   font-style: italic;
-  color: rgb(134, 92, 47);
+  color: rgb(71, 71, 74);
   transform: skewX(-10deg);
 }
 
-/* Dropdown container */
+/* Dropdown container (hidden by default) */
 .dropdown {
   position: relative;
 }
 
 .dropdown-content {
-  display: none; /* Hide the dropdown menu by default */
+  display: none; /* Hide the dropdown by default */
   position: absolute;
-  background-color: rgb(255, 255, 255);
-  min-width: 160px;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  list-style-type: none;
-  padding: 10px 0;
+  left: 0;
+  top: 100%; /* Position the dropdown directly beneath the Products link */
+  background-color: transparent; /* No background or border */
+  padding: 0; /* Remove padding */
+  margin: 0;
+  list-style-type: none; /* Remove bullet points */
+  width: max-content; /* Adjust to the size of the items */
 }
 
 .dropdown-content li {
-  padding: 8px 16px;
+  padding: 5px 10px;
 }
 
 .dropdown-content li a {
-  color: rgb(71, 71, 74);
-  text-decoration: none;
-  display: block;
+  color: rgb(71, 71, 74); /* Text color */
+  text-decoration: none; /* Remove underline */
+  display: block; /* Make links block elements so they span the full width */
 }
 
-.dropdown-content li a:hover {
-  background-color: rgb(134, 92, 47);
-  color: white;
-}
-
-/* Show the dropdown when hovering over the parent */
+/* Show the dropdown when hovering over the parent (Products) */
 .dropdown:hover .dropdown-content {
-  display: grid;
+  display: block; /* Make it visible when hovered */
+}
+
+/* Optional: Add a slight hover effect to the dropdown items */
+.dropdown-content li a:hover {
+  font-style: italic;
+  color: rgb(71, 71, 74);
+  transform: skewX(-10deg);
 }
 
   /*#nav-bar {
