@@ -55,7 +55,7 @@ html {
   #nav-bar {
     background-color: #7fa5f8; /* Background color */
     font-family: 'Duru Sans';
-    position: fixed; /* Keep navbar fixed at the top of the page */
+    position: static; /* Keep navbar fixed at the top of the page */
     top: 0;
     right: 0;
     padding: 10px; /* Padding around navbar */
