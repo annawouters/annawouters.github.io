@@ -5,134 +5,164 @@ html {
     text-align: left;
   }
   
-  .content {
-    max-width: 500px;
-    margin: auto;
-  }
-  
-  h1 {
-    font-size: 60px;
-    margin: 0;
-    padding: 20px 0;
-    font-family: 'Duru Sans';
-    color: rgb(71, 71, 74);
-  }
+.content {
+  max-width: 500px;
+  margin: auto;
+}
 
-  h2 {
-    font-size: 45px;
-    margin: 0;
-    padding: 20px 0;
-    font-family: 'Duru Sans';
-    color: rgb(71, 71, 74);
-  }
-  
-  p, li {
-    font-size: 16px;
-    line-height: 2;
-    letter-spacing: 1px;
-    color: rgb(71, 71, 74)
-  }
-  
-  
-  body {
-    width: 80%;
-    margin-left:auto;
-    margin-right:auto;
-    background-image: url(images/forest-background.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    padding: 0 20px 20px 20px;
-  }
+body {
+  width: 80%;
+  margin-left:auto;
+  margin-right:auto;
+  background-image: url(images/forest-background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 0 20px 20px 20px;
+}
 
-  #nav-bar {
-    background-color: #7fa5f8; /* Background color */
-    font-family: 'Duru Sans';
-    position: static; /* Keep navbar fixed at the top of the page */
-    top: 0;
-    right: 0;
-    padding: 10px; /* Padding around navbar */
-  }
-  
-  #nav-bar ul {
-    list-style-type: none; /* Removes bullets from the list */
-    margin: 0; /* Removes default margin */
-    padding: 0; /* Removes default padding */
-    display: flex; /* Display the list items horizontally */
-    justify-content: flex-end; /* Align items to the right */
-  }
-  
-  #nav-bar li {
-    position: relative; /* Allows positioning of the dropdown menu */
-    margin: 0; /* No margin around list items */
-  }
-  
-  .nav-link {
-    font-size: 23px;
-    padding: 10px;
-    text-decoration: none;
-    color: rgb(71, 71, 74);
-    display: inline-block; /* Keeps the links inline */
-    transition: color 0.3s ease, transform 0.3s ease;
-  }
-  
-  /* Hover effect for nav links */
-  .nav-link:hover {
-    font-style: italic;
-    color: rgb(71, 71, 74);
-    transform: skewX(-10deg);
-  }
-  
-  /* Dropdown container (hidden by default) */
-  .dropdown {
-    position: relative;
-  }
-  
-  .dropdown-content {
-    display: none; /* Hide dropdown by default */
-    position: absolute;
-    background-color: transparent; /* No background or border */
-    list-style-type: none; /* Removes bullet points */
-    z-index: 9999; /* Make sure dropdown is above other content */
-  }
-  
-  .dropdown-content li {
-    display: block; /* Ensures dropdown items are stacked vertically */
-    padding: 5px 10px;
-  }
-  
-  .dropdown-content li a {
-    color: rgb(71, 71, 74); /* Text color */
-    text-decoration: none; /* Removes underline */
-    display: block; /* Makes links block elements */
-  }
-  
-  /* Show the dropdown when hovering over the parent (Products) */
-  .dropdown:hover .dropdown-content {
-    display: block; /* Makes dropdown visible when hovered */
-  }
-  
-  /* Optional: Add a slight hover effect to the dropdown items */
-  .dropdown-content li a:hover {
-    font-style: italic;
-    color: rgb(71, 71, 74);
-    transform: skewX(-10deg);
-  }  
-    
 
-  .parent {
-    border: 1px solid black;
-    margin: 1rem;
-    padding: 2rem 2rem;
-    text-align: center;
-  }
-  .child {
-    display: inline-block;
-    padding: 1rem 1rem;
-    vertical-align: middle;
-  }
-  
-  img {
-    display: block;
-    margin: 0 auto;
-  }
+/* ------ TEXT ------ */
+
+
+h1 {
+  font-size: 60px;
+  margin: 0;
+  padding: 20px 0;
+  font-family: 'Duru Sans';
+  color: rgb(71, 71, 74);
+}
+
+h2 {
+  font-size: 45px;
+  margin: 0;
+  padding: 20px 0;
+  font-family: 'Duru Sans';
+  color: rgb(71, 71, 74);
+}
+
+p, li {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+  color: rgb(71, 71, 74)
+}
+
+
+/* ------ NAVIGATION ------ */ 
+
+
+#nav-bar {
+  background-color: #7fa5f8; /* Background color */
+  font-family: 'Duru Sans';
+  position: static; /* Keep navbar fixed at the top of the page */
+  top: 0;
+  right: 0;
+  padding: 10px; /* Padding around navbar */
+}
+
+#nav-bar ul {
+  list-style-type: none; /* Removes bullets from the list */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  display: flex; /* Display the list items horizontally */
+  justify-content: flex-end; /* Align items to the right */
+}
+
+#nav-bar li {
+  position: relative; /* Allows positioning of the dropdown menu */
+  margin: 0; /* No margin around list items */
+}
+
+.nav-link {
+  font-size: 23px;
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(71, 71, 74);
+  display: inline-block; /* Keeps the links inline */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for nav links */
+.nav-link:hover {
+  font-style: italic;
+  color: rgb(71, 71, 74);
+  transform: skewX(-10deg);
+}
+
+/* Dropdown container (hidden by default) */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none; /* Hide dropdown by default */
+  position: absolute;
+  background-color: transparent; /* No background or border */
+  list-style-type: none; /* Removes bullet points */
+  z-index: 9999; /* Make sure dropdown is above other content */
+}
+
+.dropdown-content li {
+  display: block; /* Ensures dropdown items are stacked vertically */
+  padding: 5px 10px;
+}
+
+.dropdown-content li a {
+  color: rgb(71, 71, 74); /* Text color */
+  text-decoration: none; /* Removes underline */
+  display: block; /* Makes links block elements */
+}
+
+/* Show the dropdown when hovering over the parent (Products) */
+.dropdown:hover .dropdown-content {
+  display: block; /* Makes dropdown visible when hovered */
+}
+
+/* Optional: Add a slight hover effect to the dropdown items */
+.dropdown-content li a:hover {
+  font-style: italic;
+  color: rgb(71, 71, 74);
+  transform: skewX(-10deg);
+}  
+
+
+/* ------ DOUBLE ITEMS ------ */
+
+
+.parent {
+  margin: 1rem;
+  padding: 2rem 2rem;
+  text-align: center;
+}
+.child {
+  display: inline-block;
+  padding: 1rem 1rem;
+  vertical-align: middle;
+  font-size: 10px;
+}
+
+
+/* ------ IMAGES ------ */
+
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+
+/* ------ LINKS ------ */
+
+
+a:visited {
+color: rgb(0, 0, 0);
+}
+
+a:hover {
+color: rgb(71, 71, 74);
+}
+
+a:active {
+color: rgb(71, 71, 74);
+}
