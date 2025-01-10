@@ -45,30 +45,26 @@ html {
   .nav-link {
     font-size: 23px;
     padding-top: 10px;
+    padding: 5px 5px; /* Zorg ervoor dat padding consistent is */
     text-decoration: none;
-    display: flex;
-    justify-content: end;
-    display: inline;
     font-family: 'Duru Sans';
     color: rgb(71, 71, 74);
-    padding: 5px 5px;
-     
+    display: inline-block; /* Verander van 'inline' naar 'inline-block' om betere controle over de layout */
+    transition: transform 0.3s ease, color 0.3s ease; /* Voeg overgang toe voor een vloeiendere hover */
+  }
+
+  .nav-link:hover {
+    font-style: italic; /* Schuin gedrukt bij hover */
+    color: rgb(134, 92, 47); /* Kleur veranderen bij hover */
+    transform: skewX(-10deg); /* Voegt een schuine hoek toe aan de tekst */
   }
 
   #nav-bar {
-  float: right;
-  top: 0;
-  right: 0;
-  }
-
-  #nav-bar:hover {
     float: right;
     top: 0;
     right: 0;
-    font-family: 'Duru Sans';
-    color: rgb(134, 92, 47);
-    }
-  
+  }
+
   img {
     display: block;
     margin: 0 auto;
