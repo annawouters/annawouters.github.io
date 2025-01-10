@@ -43,92 +43,82 @@ html {
     padding: 0 20px 20px 20px;
   }
 
-/* Basic styling for the navigation bar */
-#nav-bar {
-  background-color: #7fa5f8; /* Set a background color if needed */
-  font-family: 'Duru Sans';
-}
-
-.nav-list {
-  list-style-type: none; /* Remove default list styles */
-  margin: 0;
-  padding: 0;
-  display: flex; /* Display the menu items in a row */
-  justify-content: flex-end; /* Align items to the right */
-}
-
-.nav-list li {
-  position: relative; /* Allow positioning of the dropdown menu */
-}
-
-.nav-link {
-  font-size: 23px;
-  padding: 10px;
-  text-decoration: none;
-  color: rgb(71, 71, 74);
-  display: inline-block; /* Keeps the links inline */
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-
-/* Hover effect for nav links */
-.nav-link:hover {
-  font-style: italic;
-  color: rgb(71, 71, 74);
-  transform: skewX(-10deg);
-}
-
-/* Dropdown container (hidden by default) */
-.dropdown {
-  position: relative;
-}
-
-.dropdown-content {
-  display: none; /* Hide the dropdown by default */
-  position: absolute;
-  left: 0;
-  top: 100%; /* Position the dropdown directly beneath the Products link */
-  background-color: transparent; /* No background or border */
-  padding: 0; /* Remove padding */
-  margin: 0;
-  list-style-type: none; /* Remove bullet points */
-  width: max-content; /* Adjust to the size of the items */
-}
-
-.dropdown-content li {
-  padding: 5px 10px;
-}
-
-.dropdown-content li a {
-  color: rgb(71, 71, 74); /* Text color */
-  text-decoration: none; /* Remove underline */
-  display: block; /* Make links block elements so they span the full width */
-}
-
-/* Show the dropdown when hovering over the parent (Products) */
-.dropdown:hover .dropdown-content {
-  display: block; /* Make it visible when hovered */
-}
-
-/* Optional: Add a slight hover effect to the dropdown items */
-.dropdown-content li a:hover {
-  font-style: italic;
-  color: rgb(71, 71, 74);
-  transform: skewX(-10deg);
-}
-
-  /*#nav-bar {
-  float: right;
-  top: 0;
-  right: 0;
-  }
-
-  #nav-bar:hover {
-    float: right;
+  #nav-bar {
+    background-color: #7fa5f8; /* Set a background color if needed */
+    font-family: 'Duru Sans';
+    position: fixed; /* Keeps the navbar in place while scrolling */
     top: 0;
     right: 0;
-    font-family: 'Duru Sans';
+    padding: 10px; /* Adds some padding for spacing */
+  }
+  
+  .nav-list {
+    list-style-type: none; /* Removes bullets */
+    margin: 0; /* Removes any default margin */
+    padding: 0; /* Removes any default padding */
+    display: flex; /* Makes the menu items display in a row */
+    justify-content: flex-end; /* Align items to the right */
+  }
+  
+  .nav-list li {
+    position: relative; /* Allows positioning of the dropdown menu */
+    margin: 0; /* Ensures no margin on list items */
+  }
+  
+  .nav-link {
+    font-size: 23px;
+    padding: 10px;
+    text-decoration: none;
     color: rgb(71, 71, 74);
-    }*/
+    display: inline-block; /* Keeps the links inline */
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Hover effect for nav links */
+  .nav-link:hover {
+    font-style: italic;
+    color: rgb(71, 71, 74);
+    transform: skewX(-10deg);
+  }
+  
+  /* Dropdown container (hidden by default) */
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    display: none; /* Hides the dropdown by default */
+    position: absolute;
+    left: 0;
+    top: 100%; /* Positions the dropdown directly beneath the Products link */
+    background-color: transparent; /* No background or border */
+    padding: 0; /* Removes padding */
+    margin: 0;
+    list-style-type: none; /* Removes bullet points */
+    width: max-content; /* Adjusts width to the size of the items */
+  }
+  
+  .dropdown-content li {
+    padding: 5px 10px;
+  }
+  
+  .dropdown-content li a {
+    color: rgb(71, 71, 74); /* Text color */
+    text-decoration: none; /* Removes underline */
+    display: block; /* Makes links block elements */
+  }
+  
+  /* Show the dropdown when hovering over the parent (Products) */
+  .dropdown:hover .dropdown-content {
+    display: block; /* Makes dropdown visible when hovered */
+  }
+  
+  /* Optional: Add a slight hover effect to the dropdown items */
+  .dropdown-content li a:hover {
+    font-style: italic;
+    color: rgb(71, 71, 74);
+    transform: skewX(-10deg);
+  }
   
   img {
     display: block;
