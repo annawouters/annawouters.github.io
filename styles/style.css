@@ -44,25 +44,25 @@ html {
   }
 
   #nav-bar {
-    background-color: #7fa5f8; /* Set a background color if needed */
+    background-color: #7fa5f8; /* Background color */
     font-family: 'Duru Sans';
-    position: fixed; /* Keeps the navbar in place while scrolling */
+    position: fixed; /* Keep navbar fixed at the top of the page */
     top: 0;
     right: 0;
-    padding: 10px; /* Adds some padding for spacing */
+    padding: 10px; /* Padding around navbar */
   }
   
-  .nav-list {
-    list-style-type: none; /* Removes bullets */
-    margin: 0; /* Removes any default margin */
-    padding: 0; /* Removes any default padding */
-    display: flex; /* Makes the menu items display in a row */
+  #nav-bar ul {
+    list-style-type: none; /* Removes bullets from the list */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    display: flex; /* Display the list items horizontally */
     justify-content: flex-end; /* Align items to the right */
   }
   
-  .nav-list li {
+  #nav-bar li {
     position: relative; /* Allows positioning of the dropdown menu */
-    margin: 0; /* Ensures no margin on list items */
+    margin: 0; /* No margin around list items */
   }
   
   .nav-link {
@@ -87,15 +87,15 @@ html {
   }
   
   .dropdown-content {
-    display: none; /* Hides the dropdown by default */
+    display: none; /* Hide dropdown by default */
     position: absolute;
     left: 0;
-    top: 100%; /* Positions the dropdown directly beneath the Products link */
+    top: 100%; /* Position the dropdown below the Products link */
     background-color: transparent; /* No background or border */
-    padding: 0; /* Removes padding */
+    padding: 0; /* Remove padding */
     margin: 0;
     list-style-type: none; /* Removes bullet points */
-    width: max-content; /* Adjusts width to the size of the items */
+    width: max-content; /* Adjust to the size of the items */
   }
   
   .dropdown-content li {
