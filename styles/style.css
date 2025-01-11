@@ -21,6 +21,13 @@ body {
   padding: 0 20px 20px 20px;
 }
 
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #7485a8;
+  font-size: 20px;
+}
+
 
 /* ------ TEXT ------ */
 
@@ -34,7 +41,7 @@ h1 {
 }
 
 h2 {
-  font-size: 45px;
+  font-size: 35px;
   margin: 0;
   padding: 20px 0;
   font-family: 'Duru Sans';
